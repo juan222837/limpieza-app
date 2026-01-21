@@ -1,6 +1,6 @@
 import { supabase } from "../supabase";
 import { useAuth } from "../context/AuthContext";
-import Calendar from "./Calendar";
+import Calendar from "./Calendar.jsx";
 import CalendarAdmin from "./CalendarAdmin";
 import { useEffect, useState } from "react";
 

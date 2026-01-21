@@ -7,7 +7,7 @@ import { supabase } from "../supabase";
 import CostosPanel from "../components/CostosPanel";
 
 
-export default function CalendarAdmin() {
+export default async function CalendarAdmin() {
   const [eventos, setEventos] = useState([]);
   const [casas, setCasas] = useState([]);
   const [supervisores, setSupervisores] = useState([]);
@@ -21,10 +21,10 @@ export default function CalendarAdmin() {
 
   const hoy = new Date().toISOString().split("T")[0];
 
-const { data: tareasDia } = await supabase
-  .from("tareas")
-  .select("*, casas(nombre)")
-  .eq("fecha", hoy);
+const { data, error } = await supabase
+        .from("tareas")
+        .select("*, casas(nombre)")
+        .eq("fecha", hoy);
 
 setTareasHoy(tareasDia);
 

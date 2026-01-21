@@ -1,6 +1,6 @@
 import { useAuth } from "./context/AuthContext";
 import Login from "./pages/Login";
-import Dashboard from "./pages/Dashboard";
+import Calendar from "./pages/Calendar";
 
 export default function App() {
   const { user, loading } = useAuth();
