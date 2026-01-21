@@ -82,3 +82,9 @@ export default function Calendar({ role }) {
   )
 }
 
+await supabase
+  .from('assignments')
+  .update({ supervisor_id })
+  .eq('id', assignmentId)
+
+await loadData()
