@@ -1,0 +1,46 @@
+body {
+  font-family: system-ui;
+  background: #f4f6f8;
+  margin: 0;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: white;
+  padding: 2rem;
+  width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.login-card input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: .7rem;
+}
+
+.login-card button {
+  width: 100%;
+  padding: .7rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.calendar {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+}
+
+.calendar th, .calendar td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
